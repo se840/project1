@@ -1,0 +1,99 @@
+.img {
+    margin-top: 45px;
+    margin-left: 30px;
+    max-width: 300px;
+    max-height: 400px;
+}
+
+.name {
+    margin-left: 80px;
+    margin-top: 30px;
+    color: rosybrown;
+}
+
+.updates {
+    margin-left: 400px;
+    margin-top: 30px;
+}
+
+.search-box {
+    margin-left: 375px;
+    margin-top: 20px;
+}
+
+.search-txt {
+    max-width: 200px
+}
+
+.search-btn {
+    max-height: 40px;
+}
+
+.container {
+    display: flex;
+    outline: 2px solid silver;
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    grid-gap: 40px;
+    flex-direction: column;
+}
+
+.InfoBox {
+    color: aliceblue;
+    background: rebeccapurple;
+    box-shadow: 10px 10px 3px grey;
+    outline: 1px solid black;
+    width: 300px;
+    height: 80px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.link {
+    color: seashell;
+}
+
+header,
+footer,
+article,
+aside {
+    padding: 20px;
+    background: darkolivegreen;
+}
+
+.article {
+    background: darkgray;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 20% 1fr 15%;
+    grid-template-rows: 60px 1fr 60px;
+    grid-gap: 10px;
+    margin: 0;
+    height: 100vh;
+    grid-template-areas: "header header header" "aside article article" "footer footer footer";
+}
+
+.header {
+    grid-area: header;
+}
+
+.article {
+    grid-area: article;
+    height: 850px;
+}
+
+.footer {
+    grid-area: footer;
+    height: 120px;
+}
+
+.aside {
+    grid-area: aside;
+}
+
+.title {
+    margin-top: 5px;
+}
