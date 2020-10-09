@@ -57,7 +57,8 @@
 header,
 footer,
 article,
-aside {
+aside,
+label {
     padding: 20px;
     background: darkolivegreen;
 }
@@ -73,7 +74,7 @@ body {
     grid-gap: 10px;
     margin: 0;
     height: 100vh;
-    grid-template-areas: "header header header" "aside article article" "footer footer footer";
+    grid-template-areas: "header header header" "aside article label" "footer footer footer";
 }
 
 .header {
@@ -96,4 +97,21 @@ body {
 
 .title {
     margin-top: 5px;
+}
+
+.label {
+    grid-area: label;
+    max-width: 120px;
+    height: 850px;
+}
+
+@media screen and (max-width: 575px) {
+    #label2 {
+        display: block;
+        cursor: pointer;
+        float: right;
+        width: 35px;
+        height: 35px;
+        background: url(images\kisspng-hamburger-button-computer-icons-menu-user-interfac-5c0252cad28b76.4907960615436561388624.png);
+    }
 }
